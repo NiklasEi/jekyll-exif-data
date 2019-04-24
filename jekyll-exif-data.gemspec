@@ -6,15 +6,25 @@ require 'jekyll/exif-data/version'
 Gem::Specification.new do |spec|
   spec.name        = "jekyll-exif-data"
   spec.version     = Jekyll::ExifData::VERSION
-  spec.authors     = ["Niklas Eicker"]
+  spec.author      = "Niklas Eicker"
   spec.email       = ["hello@nikl.me"]
-  spec.homepage    = "http://rubygems.org/gems/foodie"
+  spec.licenses    = ['MIT']
+  spec.homepage    = "https://github.com/NiklasEi/jekyll-exif-data"
   spec.summary     = "jekyll-exif-data makes exif data accessible for jekyll sites"
   spec.description = "jekyll-exif-data adds the Liquid filter exif which uses exirf to read the exif data of an image"
 
   spec.files         = [*Dir["lib/**/*.rb"], "README.md", "LICENSE.md"]
   spec.test_files    = [*Dir["spec/*.rb"]]
   spec.require_paths = ["lib"]
+
+  if spec.respond_to?(:metadata)
+    spec.metadata = {
+        'bug_tracker_uri' => 'https://github.com/NiklasEi/jekyll-exif-data/issues',
+        'documentation_uri' => 'https://github.com/NiklasEi/jekyll-exif-data',
+        'homepage_uri'      => 'https://github.com/NiklasEi/jekyll-exif-data',
+        'source_code_uri' => 'https://github.com/NiklasEi/jekyll-exif-data'
+    }
+  end
 
   spec.required_ruby_version = '>= 1.9.3'
   spec.add_development_dependency 'liquid'
