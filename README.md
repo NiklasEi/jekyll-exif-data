@@ -35,7 +35,7 @@ Examples:
 
 For more examples of possible exif tags see [exifr](https://github.com/remvee/exifr). The argument taken by the `exif` filter is the name of the method in exifr (for deeper methods join them with a dot e.g. `gps.latitude` or `f_number.to_f`).
 
-You can use the arguments `exif?` and `gps?` to figure out whether there is any exif/gps data for your image:
+You can use the arguments `exif?` and `gps?` to figure out whether there is any exif/gps data for your image. Example code to link to the location where the image was taken on https://www.openstreetmap.org:
 ```
 {% capture has_exif %}{{ image-path-no-leading-slash | exif: "exif?" }}{% endcapture %}
 {% capture has_gps %}{{ image-path-no-leading-slash | exif: "gps?" }}{% endcapture %}
@@ -48,4 +48,4 @@ You can use the arguments `exif?` and `gps?` to figure out whether there is any 
 {% endif %}
 ```
 
-If the exif tag exists, but there is no value saved for it "nil" is returned.
+If the exif tag exists, but there is no value saved for it "nil" is returned (as String!).
