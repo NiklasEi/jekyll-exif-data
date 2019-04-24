@@ -1,0 +1,10 @@
+# Gem stuff
+Gemfile.lock
+pkg/*
+*.gem
+
+# bundle path (see .bundle/config)
+.vendor
+
+# IDE
+.idea
