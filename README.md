@@ -1,5 +1,7 @@
 # Jekyll-exif-data
 
+[![Gem Version](https://badge.fury.io/rb/jekyll-exif-data.svg)](https://badge.fury.io/rb/jekyll-exif-data)
+
 This Jekyll plugin adds the Liquid filter `exif`, supplying exif data to Jekyll websites. To read the data [exifr](https://github.com/remvee/exifr) is needed as a dependency.
 
 ## Installation
