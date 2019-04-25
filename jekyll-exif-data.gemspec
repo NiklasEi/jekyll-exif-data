@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email       = ["hello@nikl.me"]
   spec.licenses    = ['MIT']
   spec.homepage    = "https://github.com/NiklasEi/jekyll-exif-data"
-  spec.summary     = "jekyll-exif-data makes exif data accessible for jekyll sites"
-  spec.description = "jekyll-exif-data adds the Liquid filter exif which uses exirf to read the exif data of an image"
+  spec.summary     = "This plugin provides exif data for images in Jekyll websites via a Liquid filter using exifr. For source code, issues, and example usages please refer to the GitHub repository."
+  spec.description = "Provides exif data for images in Jekyll websites via a Liquid filter"
 
   spec.files         = [*Dir["lib/**/*.rb"], "README.md", "LICENSE.md"]
   spec.test_files    = [*Dir["spec/*.rb"]]
