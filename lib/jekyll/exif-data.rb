@@ -12,7 +12,7 @@ module Jekyll
         end
         answer = exiftag.split('.').inject(exif){|exif,tag| exif.send(tag)}
         if(answer == nil)
-          return "nil"
+          return ""
         else
           return answer
         end
