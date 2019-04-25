@@ -19,10 +19,11 @@ Gem::Specification.new do |spec|
 
   if spec.respond_to?(:metadata)
     spec.metadata = {
-        'bug_tracker_uri' => 'https://github.com/NiklasEi/jekyll-exif-data/issues',
+        'bug_tracker_uri'   => 'https://github.com/NiklasEi/jekyll-exif-data/issues',
         'documentation_uri' => 'https://github.com/NiklasEi/jekyll-exif-data',
         'homepage_uri'      => 'https://github.com/NiklasEi/jekyll-exif-data',
-        'source_code_uri' => 'https://github.com/NiklasEi/jekyll-exif-data'
+        'source_code_uri'   => 'https://github.com/NiklasEi/jekyll-exif-data',
+        'changelog_uri'     => 'https://github.com/NiklasEi/jekyll-exif-data/blob/master/changelog.md'
     }
   end
 
